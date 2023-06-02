@@ -5,17 +5,13 @@ import { Link } from "react-router-dom";
 import React from "react";
 
 function Home() {
-  const [posts, setPosts] = React.useState();
+  const [posts, setPosts] = React.useState("");
 
   useEffect(() => {
     return () => {
       getPosts();
     };
-  }, [
-    axios
-      .get("https://neistagram-disconnect-app.onrender.com/upload")
-      .then((res) => {}),
-  ]);
+  }, []);
 
   const username = localStorage.getItem("usernameMYwebsite");
 
@@ -34,8 +30,9 @@ function Home() {
       .get("https://neistagram-disconnect-app.onrender.com/upload")
       .then((res) => {
         Promise.all([res.data]).then((res) => {
+          console.log(res[0].reverse());
           setPosts(
-            res[0].reverse().map((post) => (
+            res[0].map((post) => (
               <div className={s.post} key={post.id}>
                 <h2 className={s.title}>{post.title}</h2>
                 <p className={s.description}>{post.description}</p>
