@@ -2,9 +2,10 @@ import axios from "axios";
 import s from "./Home.module.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import React from "react";
 
 function Home() {
-  const [posts, setPosts] = useState();
+  const [posts, setPosts] = React.useState();
 
   useEffect(() => {
     return () => {
