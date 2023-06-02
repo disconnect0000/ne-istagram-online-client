@@ -1,0 +1,75 @@
+h1 {
+  font-size: 80px;
+}
+.wrapper {
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.createPost {
+  width: 450px;
+  height: auto;
+  margin-bottom: 120px;
+}
+.createPost h2 {
+  font-size: 35px;
+  margin-bottom: 25px;
+}
+
+.postName {
+  width: 430px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.postDesc {
+  width: 427px;
+  height: 200px;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.postSend {
+  display: block;
+  width: 450px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: ease-in 0.15s all;
+  margin-top: 20px;
+}
+
+.postSend:hover {
+  background-color: white;
+  color: black;
+  outline: 1px solid black;
+}
+
+.Logout {
+  display: block;
+  width: 450px;
+  height: 70px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 30px;
+  cursor: pointer;
+  transition: ease-in 0.15s all;
+  margin-top: 20px;
+}
+
+.Logout:hover {
+  background-color: white;
+  color: black;
+  outline: 1px solid black;
+}
