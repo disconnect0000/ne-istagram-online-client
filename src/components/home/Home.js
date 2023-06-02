@@ -11,7 +11,7 @@ function Home() {
     return () => {
       getPosts();
     };
-  }, []);
+  }, [1 === 1]);
 
   const username = localStorage.getItem("usernameMYwebsite");
 
