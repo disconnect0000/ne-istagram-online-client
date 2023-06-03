@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
 }
-
+/* 
 h1 {
   font-size: 80px;
   margin-top: 50px;
@@ -110,4 +110,125 @@ h1 {
   background-color: white;
   color: black;
   outline: 1px solid black;
+} */
+
+.wrapper {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+/* Warning */
+.warning {
+  background-color: #ffdddd;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.warning h2 {
+  color: #ff0000;
+}
+
+/* Heading */
+h1 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Post Wrapper */
+.postWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Post */
+.post {
+  width: 45%;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Space Styles */
+
+/* Post */
+.post {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #292c34;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Title */
+.title {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+/* Description */
+.description {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Author */
+.author {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Link */
+.link {
+  margin-left: 5px;
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Delete Button */
+.delete {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #ff5851;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Delete Button Hover */
+.delete:hover {
+  background-color: #ff3630;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .post {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .author {
+    font-size: 12px;
+  }
+
+  .delete {
+    font-size: 12px;
+  }
 }

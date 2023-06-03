@@ -1,4 +1,4 @@
-.Header {
+/* .Header {
   width: 100vw;
   height: 70px;
   background: white;
@@ -23,4 +23,81 @@
   font-size: 20px;
   font-weight: 500;
   color: black;
+} */
+/* Space Theme Styles */
+
+/* Header */
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #292c34;
+  color: #fff;
+}
+
+/* Logo */
+.logo {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  /* Add your logo styles here */
+}
+
+/* Links */
+.links {
+  display: flex;
+  align-items: center;
+}
+
+/* Link */
+.link {
+  margin-right: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px; /* Increased font size */
+}
+
+/* Link Hover */
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .Header {
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+  .links {
+    gap: 20px;
+  }
+  .link {
+    margin-right: 0;
+    margin-bottom: 10px;
+    font-size: 16px; /* Adjusted font size for smaller screens */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .Header {
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+  .links {
+    gap: 10px;
+  }
+  .link {
+    margin-right: 0;
+    margin-bottom: 10px;
+    font-size: 16px; /* Adjusted font size for smaller screens */
+  }
 }

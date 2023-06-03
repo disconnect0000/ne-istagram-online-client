@@ -63,7 +63,7 @@ function Login() {
   }
 
   return (
-    <div className={s.login}>
+    <div className={s.wrapper}>
       <form className={s.form} onSubmit={handleSubmit}>
         <h2>Login Form</h2>
         <div className={s.form_group}>
@@ -91,18 +91,18 @@ function Login() {
             onChange={handleChange}
           />
           {errors.passwordError && (
-            <label htmlFor="password" style={{ color: "red", fontSize: 22 }}>
+            <p htmlFor="password" class={s.text_error}>
               {errors.passwordError}
-            </label>
+            </p>
           )}
         </div>
         {isLoggedIn && (
-          <label style={{ color: "green", fontSize: 25 }}>
+          <p style={{ color: "green", fontSize: 22 }}>
             Successfully logged in!
-          </label>
+          </p>
         )}
         <button type="submit" className={s.Submit}>
-          Login
+          <span>Login</span>
         </button>
       </form>
     </div>

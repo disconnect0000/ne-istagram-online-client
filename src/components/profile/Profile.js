@@ -42,7 +42,7 @@ function Profile() {
 
   return (
     <div className={s.wrapper}>
-      <h1>Hello, {username}!</h1>
+      <h1 className={s.userName}>Hello, {username}!</h1>
       <form className={s.createPost} onSubmit={handleSubmit}>
         <h2>Create a post</h2>
         <input
@@ -60,12 +60,14 @@ function Profile() {
           placeholder="Your description..."
         />
         <button type="submit" className={s.postSend}>
-          Post
+          <span>Post</span>
         </button>
       </form>
-      <button onClick={handleLogOut} className={s.Logout}>
-        Log out
-      </button>
+      <div className={s.logout_wrapper}>
+        <button onClick={handleLogOut} className={s.Logout}>
+          <span>Log out</span>
+        </button>
+      </div>
     </div>
   );
 }
