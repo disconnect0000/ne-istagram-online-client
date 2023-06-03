@@ -264,6 +264,7 @@ h1 {
 @media screen and (max-width: 768px) {
   .wrapper {
     scale: 87%;
+    transform: translateY(-6%);
   }
   .postName {
     font-size: 20px;
@@ -275,7 +276,7 @@ h1 {
   .postDesc {
     font-size: 20px;
   }
-  .postDesc::placeholder {
+  .postName::placeholder {
     font-size: 20px;
   }
 }

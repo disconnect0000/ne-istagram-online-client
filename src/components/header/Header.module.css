@@ -55,7 +55,7 @@
   margin-right: 10px;
   color: #fff;
   text-decoration: none;
-  font-size: 18px; /* Increased font size */
+  font-size: 25px; /* Increased font size */
 }
 
 /* Link Hover */
@@ -79,7 +79,6 @@
   .link {
     margin-right: 0;
     margin-bottom: 10px;
-    font-size: 16px; /* Adjusted font size for smaller screens */
   }
 }
 
@@ -98,6 +97,6 @@
   .link {
     margin-right: 0;
     margin-bottom: 10px;
-    font-size: 16px; /* Adjusted font size for smaller screens */
+    font-size: 22px; /* Adjusted font size for smaller screens */
   }
 }
