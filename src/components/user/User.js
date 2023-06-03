@@ -64,11 +64,13 @@ function User() {
     //   });
   }
   return (
-    <div className={s.wrapper}>
-      <h1>
-        User <strong>{username}</strong> posted:
-      </h1>
-      <div></div>
+    <div className="App">
+      <div className={s.wrapper}>
+        <h1>
+          User <strong>{username}</strong> posted:
+        </h1>
+        <div></div>
+      </div>
     </div>
   );
 }

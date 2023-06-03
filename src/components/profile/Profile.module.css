@@ -260,3 +260,22 @@ h1 {
   position: relative;
   z-index: 2;
 }
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    scale: 87%;
+  }
+  .postName {
+    font-size: 20px;
+  }
+  .postName::placeholder {
+    font-size: 20px;
+  }
+
+  .postDesc {
+    font-size: 20px;
+  }
+  .postDesc::placeholder {
+    font-size: 20px;
+  }
+}

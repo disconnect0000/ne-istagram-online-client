@@ -72,64 +72,66 @@ function Register() {
       });
   }
   return (
-    <div className={s.login}>
-      <form className={s.form} onSubmit={handleSubmit}>
-        <h2>Register Form</h2>
-        <div className={s.form_group}>
-          <label htmlFor="username">Username</label>
-          <input
-            type="text"
-            name="username"
-            placeholder="Enter your username"
-            value={values.username}
-            onChange={handleChange}
-          />
-          {errors.usernameError && (
-            <label htmlFor="username" style={{ color: "red", fontSize: 22 }}>
-              {errors.usernameError}
-            </label>
-          )}
-        </div>
-        <div className={s.form_group}>
-          <label htmlFor="password">Password</label>
-          <input
-            type="password"
-            name="password"
-            placeholder="Enter your password"
-            value={values.password}
-            onChange={handleChange}
-          />
-          {errors.passwordError && (
-            <label htmlFor="username" style={{ color: "red", fontSize: 22 }}>
-              {errors.passwordError}
-            </label>
-          )}
-        </div>
-        <div className={s.form_group}>
-          <label htmlFor="password">Password Again</label>
-          <input
-            type="password"
-            name="repeatPassword"
-            placeholder="Repeat your password"
-            value={values.repeatPassword}
-            onChange={handleChange}
-          />
-          {errors.repeatPasswordError && (
-            <label htmlFor="username" style={{ color: "red", fontSize: 22 }}>
-              {errors.repeatPasswordError}
-            </label>
-          )}
-        </div>
+    <div className="App">
+      <div className={s.wrapper}>
+        <form className={s.form} onSubmit={handleSubmit}>
+          <h2>Register Form</h2>
+          <div className={s.form_group}>
+            <label htmlFor="username">Username</label>
+            <input
+              type="text"
+              name="username"
+              placeholder="Enter your username"
+              value={values.username}
+              onChange={handleChange}
+            />
+            {errors.usernameError && (
+              <label htmlFor="username" style={{ color: "red", fontSize: 22 }}>
+                {errors.usernameError}
+              </label>
+            )}
+          </div>
+          <div className={s.form_group}>
+            <label htmlFor="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              placeholder="Enter your password"
+              value={values.password}
+              onChange={handleChange}
+            />
+            {errors.passwordError && (
+              <label htmlFor="username" style={{ color: "red", fontSize: 22 }}>
+                {errors.passwordError}
+              </label>
+            )}
+          </div>
+          <div className={s.form_group}>
+            <label htmlFor="password">Password Again</label>
+            <input
+              type="password"
+              name="repeatPassword"
+              placeholder="Repeat your password"
+              value={values.repeatPassword}
+              onChange={handleChange}
+            />
+            {errors.repeatPasswordError && (
+              <label htmlFor="username" style={{ color: "red", fontSize: 22 }}>
+                {errors.repeatPasswordError}
+              </label>
+            )}
+          </div>
 
-        {isSignedUp && (
-          <label style={{ color: "green", fontSize: 25 }}>
-            Successfully signed up!
-          </label>
-        )}
-        <button type="submit" className={s.Submit}>
-          Register
-        </button>
-      </form>
+          {isSignedUp && (
+            <label style={{ color: "green", fontSize: 25 }}>
+              Successfully signed up!
+            </label>
+          )}
+          <button type="submit" className={s.Submit}>
+            <span>Register</span>
+          </button>
+        </form>
+      </div>
     </div>
   );
 }

@@ -41,32 +41,34 @@ function Profile() {
   }
 
   return (
-    <div className={s.wrapper}>
-      <h1 className={s.userName}>Hello, {username}!</h1>
-      <form className={s.createPost} onSubmit={handleSubmit}>
-        <h2>Create a post</h2>
-        <input
-          className={s.postName}
-          value={values.postName}
-          onChange={handleChange}
-          name="postName"
-          placeholder="Your title..."
-        />
-        <textarea
-          className={s.postDesc}
-          value={values.postDesc}
-          onChange={handleChange}
-          name="postDesc"
-          placeholder="Your description..."
-        />
-        <button type="submit" className={s.postSend}>
-          <span>Post</span>
-        </button>
-      </form>
-      <div className={s.logout_wrapper}>
-        <button onClick={handleLogOut} className={s.Logout}>
-          <span>Log out</span>
-        </button>
+    <div className="App">
+      <div className={s.wrapper}>
+        <h1 className={s.userName}>Hello, {username}!</h1>
+        <form className={s.createPost} onSubmit={handleSubmit}>
+          <h2>Create a post</h2>
+          <input
+            className={s.postName}
+            value={values.postName}
+            onChange={handleChange}
+            name="postName"
+            placeholder="Your title..."
+          />
+          <textarea
+            className={s.postDesc}
+            value={values.postDesc}
+            onChange={handleChange}
+            name="postDesc"
+            placeholder="Your description..."
+          />
+          <button type="submit" className={s.postSend}>
+            <span>Post</span>
+          </button>
+        </form>
+        <div className={s.logout_wrapper}>
+          <button onClick={handleLogOut} className={s.Logout}>
+            <span>Log out</span>
+          </button>
+        </div>
       </div>
     </div>
   );

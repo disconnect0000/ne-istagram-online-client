@@ -63,48 +63,50 @@ function Login() {
   }
 
   return (
-    <div className={s.wrapper}>
-      <form className={s.form} onSubmit={handleSubmit}>
-        <h2>Login Form</h2>
-        <div className={s.form_group}>
-          <label htmlFor="username">Username</label>
-          <input
-            type="text"
-            name="username"
-            placeholder="Enter your username"
-            value={values.username}
-            onChange={handleChange}
-          />
-          {errors.usernameError && (
-            <label htmlFor="username" style={{ color: "red", fontSize: 22 }}>
-              {errors.usernameError}
-            </label>
-          )}
-        </div>
-        <div className={s.form_group}>
-          <label htmlFor="password">Password</label>
-          <input
-            type="password"
-            name="password"
-            placeholder="Enter your password"
-            value={values.password}
-            onChange={handleChange}
-          />
-          {errors.passwordError && (
-            <p htmlFor="password" class={s.text_error}>
-              {errors.passwordError}
+    <div className="App">
+      <div className={s.wrapper}>
+        <form className={s.form} onSubmit={handleSubmit}>
+          <h2>Login Form</h2>
+          <div className={s.form_group}>
+            <label htmlFor="username">Username</label>
+            <input
+              type="text"
+              name="username"
+              placeholder="Enter your username"
+              value={values.username}
+              onChange={handleChange}
+            />
+            {errors.usernameError && (
+              <label htmlFor="username" style={{ color: "red", fontSize: 22 }}>
+                {errors.usernameError}
+              </label>
+            )}
+          </div>
+          <div className={s.form_group}>
+            <label htmlFor="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              placeholder="Enter your password"
+              value={values.password}
+              onChange={handleChange}
+            />
+            {errors.passwordError && (
+              <p htmlFor="password" class={s.text_error}>
+                {errors.passwordError}
+              </p>
+            )}
+          </div>
+          {isLoggedIn && (
+            <p style={{ color: "green", fontSize: 22 }}>
+              Successfully logged in!
             </p>
           )}
-        </div>
-        {isLoggedIn && (
-          <p style={{ color: "green", fontSize: 22 }}>
-            Successfully logged in!
-          </p>
-        )}
-        <button type="submit" className={s.Submit}>
-          <span>Login</span>
-        </button>
-      </form>
+          <button type="submit" className={s.Submit}>
+            <span>Login</span>
+          </button>
+        </form>
+      </div>
     </div>
   );
 }

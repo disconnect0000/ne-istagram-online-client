@@ -67,14 +67,16 @@ function Home() {
   };
 
   return (
-    <div className={s.wrapper}>
-      {!localStorage.getItem("usernameMYwebsite") && (
-        <div className={s.warning}>
-          <h2>For using Home Page you should log in!</h2>
-        </div>
-      )}
-      <h1>Home Page for everyone!</h1>
-      <div className={s.postWrapper}>{posts}</div>
+    <div className={s.localApp}>
+      <div className={s.wrapper}>
+        {/* {!localStorage.getItem("usernameMYwebsite") && (
+          <div className={s.warning}>
+            <h2>For using Home Page you should log in!</h2>
+          </div>
+        )} */}
+        <h1>Home Page for everyone!</h1>
+        <div className={s.postWrapper}>{posts}</div>
+      </div>
     </div>
   );
 }
