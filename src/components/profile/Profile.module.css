@@ -264,7 +264,7 @@ h1 {
 @media screen and (max-width: 768px) {
   .wrapper {
     scale: 87%;
-    transform: translateY(-6%);
+    transform: translateY(-12%);
   }
   .postName {
     font-size: 20px;

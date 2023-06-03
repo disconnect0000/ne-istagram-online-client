@@ -135,8 +135,6 @@ input {
   transition: 0.5s all ease;
 }
 
-
-
 .text_error {
   color: red;
   font-size: 22px;
@@ -198,6 +196,7 @@ input {
 @media (max-width: 400px) {
   .wrapper {
     width: 70vw;
+
     padding: 30px;
   }
 

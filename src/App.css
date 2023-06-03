@@ -14,10 +14,10 @@
 @media screen and (max-width: 768px) {
   .App {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 63px - 70px);
     display: flex;
     align-items: flex-start;
-    padding-top: 80px;
+    padding-top: 70px;
 
     background-color: #1a1c23;
   }
